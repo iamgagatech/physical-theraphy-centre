@@ -1,0 +1,298 @@
+# ============================================
+# PHYSICAL THERAPY CENTRE - PRODUCTION .gitignore
+# ============================================
+# React + Vite + TypeScript + Deployment
+# Last Updated: 2024
+# ============================================
+
+# ============================================
+# ENVIRONMENT & SECRETS
+# ============================================
+# Never commit API keys, tokens, or credentials
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# EmailJS credentials
+emailjs.config.js
+
+# Backup environment files
+*.env.backup
+.env.*.backup
+
+# ============================================
+# DEPENDENCIES
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Package manager lock files (keep only one)
+# Uncomment the ones you DON'T use:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ============================================
+# BUILD OUTPUT
+# ============================================
+dist/
+dist-ssr/
+build/
+out/
+.output/
+
+# Vite build cache
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# ============================================
+# CACHE & TEMPORARY FILES
+# ============================================
+*.local
+*.cache
+.cache/
+.temp/
+.tmp/
+temp/
+tmp/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# ESLint cache
+.eslintcache
+
+# Prettier cache
+.prettiercache
+
+# Stylelint cache
+.stylelintcache
+
+# ============================================
+# EDITOR & IDE
+# ============================================
+# VSCode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.vscode/settings.local.json
+
+# JetBrains IDEs (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Atom
+.atom/
+
+# ============================================
+# OPERATING SYSTEM
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# TESTING
+# ============================================
+coverage/
+*.coverage
+.nyc_output/
+.jest/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/results/
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# ============================================
+# LOGS
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log
+
+# ============================================
+# DEPLOYMENT
+# ============================================
+# Vercel
+.vercel
+.vercel.json.local
+
+# Netlify
+.netlify/
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# GitHub Pages
+.gh-pages/
+
+# ============================================
+# MISCELLANEOUS
+# ============================================
+# Backup files
+*.backup
+*.bak
+*.orig
+*.old
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Large media files (add to Git LFS if needed)
+# *.mp4
+# *.mov
+# *.avi
+# *.psd
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Certificate files
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+
+# SSH keys
+id_rsa
+id_rsa.pub
+*.ppk
+
+# ============================================
+# PROJECT SPECIFIC
+# ============================================
+# Custom analytics configs
+analytics.config.js
+
+# Local development overrides
+*.local.tsx
+*.local.ts
+*.local.jsx
+*.local.js
+
+# Generated documentation
+docs/api/
+docs/generated/
+
+# Storybook
+storybook-static/
+.storybook/build/
+
+# Next.js specific (if migrating later)
+.next/
+next-env.d.ts
+
+# ============================================
+# SECURITY
+# ============================================
+# Never commit these
+secret.*
+secrets.*
+private.*
+*.secret
+*.private
+
+# API keys file
+api-keys.json
+credentials.json
+
+# ============================================
+# KEEP THESE FILES (EXAMPLES)
+# ============================================
+# The following should be committed:
+# - .env.example
+# - .env.template
+# - README.md
+# - DEPLOYMENT.md
+# - package.json
+# - tsconfig.json
+# - vite.config.ts
+# - tailwind.config.js
+
+# ============================================
+# END OF .gitignore
+# ============================================

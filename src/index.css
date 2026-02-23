@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #0A2540;
+  --color-brand-teal: #20B2AA;
+  --color-brand-teal-dark: #168d87;
+  --color-brand-gray: #4A5568;
+  --color-background: #F8FAFC;
+  --color-foreground: #0A2540;
+
+  --font-sans: "Inter", "system-ui", "-apple-system", "sans-serif";
+  --font-serif: "Playfair Display", "serif";
+
+  --shadow-soft: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-medium: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-brand-navy;
+  }
+}
+
+.cta-sticky {
+  position: sticky;
+  bottom: 0;
+  z-index: 50;
+  padding: 1rem;
+  background: white;
+  border-top: 1px solid #e2e8f0;
+}
+
+@media (min-width: 768px) {
+  .cta-sticky {
+    display: none;
+  }
+}
